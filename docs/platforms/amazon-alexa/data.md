@@ -86,6 +86,21 @@ async GetCountryAndPostalCodeIntent() {
 
 Get the address:
 
+project.js
+```
+alexaSkill: {
+                manifest: {
+                    permissions: [
+                        {
+                            name: 'alexa::devices:all:address:full:read'
+                        }
+                    ],
+                }
+            }
+```
+
+src/app.js
+
 ```javascript
 // @language=javascript
 
